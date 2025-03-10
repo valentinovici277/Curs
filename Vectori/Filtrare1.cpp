@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 /*
-citire-afisare
+Filtrare elemente
+Se citesc n elemente. 
+Sa se afiseze elementele pare 
+
 */
 int main(){
 
@@ -16,8 +19,12 @@ int main(){
 
     for(int i=0;i<n;i++)
     {
-        cout<<v[i]<<" ";
+        if(v[i]%2==0)
+        {
+            cout<<v[i]<<" ";
+        }
     }
+
     return 0;
 }
 
